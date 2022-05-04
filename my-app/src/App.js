@@ -3,7 +3,6 @@ import { useState, Suspense } from 'react';
 import './App.css';
 import {Home} from './Home';
 import {Employe} from './Employe';
-import {AddEmploye} from './AddEmploye';
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 
 function App() {
@@ -23,11 +22,7 @@ function App() {
                 Employes
               </NavLink>
             </li>
-            <li className='nav-item- m-1'>
-              <NavLink className="btn btn-light btn-outline-primary" to="/AddEmploye">
-                AddEmploye
-              </NavLink>
-            </li>
+           
             
         </ul>
     </nav>
@@ -35,9 +30,6 @@ function App() {
     <Routes>
       <Route path="/Home" element={ <Home />} />
       <Route path='/Employe' element={<Employe/>} />
-      <Route path='/AddEmploye' element={<AddEmploye/>} />
-     
-   
     </Routes>
     
 
@@ -47,3 +39,4 @@ function App() {
 }
 
 export default App;
+
